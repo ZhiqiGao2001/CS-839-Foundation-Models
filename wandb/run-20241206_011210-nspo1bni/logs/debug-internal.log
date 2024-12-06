@@ -1,0 +1,16 @@
+{"time":"2024-12-06T01:12:10.004891197-06:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-06T01:12:10.004899831-06:00","level":"INFO","msg":"created symlink","path":"/home/zhiqi/CS839-Project/wandb/run-20241206_011210-nspo1bni/logs/debug-core.log"}
+{"time":"2024-12-06T01:12:10.107462088-06:00","level":"INFO","msg":"created new stream","id":"nspo1bni"}
+{"time":"2024-12-06T01:12:10.107478227-06:00","level":"INFO","msg":"stream: started","id":"nspo1bni"}
+{"time":"2024-12-06T01:12:10.107520118-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"nspo1bni"}
+{"time":"2024-12-06T01:12:10.107584721-06:00","level":"INFO","msg":"sender: started","stream_id":"nspo1bni"}
+{"time":"2024-12-06T01:12:10.107607472-06:00","level":"INFO","msg":"handler: started","stream_id":"nspo1bni"}
+{"time":"2024-12-06T01:12:10.394285655-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-06T01:12:34.787349212-06:00","level":"INFO","msg":"stream: closing","id":"nspo1bni"}
+{"time":"2024-12-06T01:12:34.787381628-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-06T01:12:34.787833073-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-06T01:12:35.197380124-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-06T01:12:35.682936505-06:00","level":"INFO","msg":"handler: closed","stream_id":"nspo1bni"}
+{"time":"2024-12-06T01:12:35.682951175-06:00","level":"INFO","msg":"sender: closed","stream_id":"nspo1bni"}
+{"time":"2024-12-06T01:12:35.68294883-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"nspo1bni"}
+{"time":"2024-12-06T01:12:35.682992247-06:00","level":"INFO","msg":"stream: closed","id":"nspo1bni"}

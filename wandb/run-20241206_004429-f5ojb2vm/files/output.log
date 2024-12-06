@@ -1,0 +1,20 @@
+  0%|                                                                                                                                                                                                                 | 5/45900 [00:01<3:38:57,  3.49it/s]Traceback (most recent call last):
+  File "/home/zhiqi/CS839-Project/small_model.py", line 113, in <module>
+    initialize_training(
+  File "/home/zhiqi/CS839-Project/small_model.py", line 90, in initialize_training
+    trainer.train()
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2486, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/zhiqi/CS839-Project/small_model.py", line 113, in <module>
+    initialize_training(
+  File "/home/zhiqi/CS839-Project/small_model.py", line 90, in initialize_training
+    trainer.train()
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2486, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt

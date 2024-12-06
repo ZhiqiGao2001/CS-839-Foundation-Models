@@ -1,0 +1,103 @@
+  2%|███▍                                                                                                                                                                                                               | 74/4590 [00:19<20:02,  3.76it/s]Traceback (most recent call last):
+{'loss': 10.7151, 'grad_norm': 3.764997720718384, 'learning_rate': 4.9891067538126364e-05, 'epoch': 0.0}
+{'loss': 10.5483, 'grad_norm': 1.7055439949035645, 'learning_rate': 4.9782135076252726e-05, 'epoch': 0.0}
+{'loss': 10.4625, 'grad_norm': 1.5101865530014038, 'learning_rate': 4.967320261437909e-05, 'epoch': 0.01}
+{'loss': 10.373, 'grad_norm': 1.5549955368041992, 'learning_rate': 4.956427015250545e-05, 'epoch': 0.01}
+{'loss': 10.2747, 'grad_norm': 1.3259259462356567, 'learning_rate': 4.945533769063181e-05, 'epoch': 0.01}
+{'loss': 10.1681, 'grad_norm': 2.0205283164978027, 'learning_rate': 4.9346405228758174e-05, 'epoch': 0.01}
+{'loss': 10.1119, 'grad_norm': 3.316138982772827, 'learning_rate': 4.9237472766884536e-05, 'epoch': 0.02}
+  File "/home/zhiqi/CS839-Project/small_model.py", line 114, in <module>
+    initialize_training(
+  File "/home/zhiqi/CS839-Project/small_model.py", line 89, in initialize_training
+    trainer.train()
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 47, in training_step
+    loss = super().training_step(model, inputs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 3579, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 3633, in compute_loss
+    outputs = model(**inputs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 968, in forward
+    transformer_outputs = self.transformer(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 750, in forward
+    outputs = block(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 459, in forward
+    attn_outputs = self.attn(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 409, in forward
+    return self.attention(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 261, in forward
+    attn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 220, in _attn
+    mask_value = torch.tensor(mask_value, dtype=attn_weights.dtype).to(attn_weights.device)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/zhiqi/CS839-Project/small_model.py", line 114, in <module>
+    initialize_training(
+  File "/home/zhiqi/CS839-Project/small_model.py", line 89, in initialize_training
+    trainer.train()
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 47, in training_step
+    loss = super().training_step(model, inputs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 3579, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 3633, in compute_loss
+    outputs = model(**inputs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 968, in forward
+    transformer_outputs = self.transformer(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 750, in forward
+    outputs = block(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 459, in forward
+    attn_outputs = self.attn(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 409, in forward
+    return self.attention(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 261, in forward
+    attn_output, attn_weights = self._attn(query, key, value, attention_mask, head_mask)
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/models/gpt_neo/modeling_gpt_neo.py", line 220, in _attn
+    mask_value = torch.tensor(mask_value, dtype=attn_weights.dtype).to(attn_weights.device)
+KeyboardInterrupt

@@ -1,0 +1,44 @@
+  2%|████▎                                                                                                                                                                                                          | 283/13770 [01:15<1:00:20,  3.73it/s]Traceback (most recent call last):
+{'loss': 10.7217, 'grad_norm': 3.0978758335113525, 'learning_rate': 4.9963689179375456e-05, 'epoch': 0.0}
+{'loss': 10.5521, 'grad_norm': 1.709000587463379, 'learning_rate': 4.992737835875091e-05, 'epoch': 0.0}
+{'loss': 10.4699, 'grad_norm': 1.4530609846115112, 'learning_rate': 4.9891067538126364e-05, 'epoch': 0.01}
+{'loss': 10.3888, 'grad_norm': 1.5963879823684692, 'learning_rate': 4.985475671750182e-05, 'epoch': 0.01}
+{'loss': 10.2946, 'grad_norm': 1.3058744668960571, 'learning_rate': 4.981844589687727e-05, 'epoch': 0.01}
+{'loss': 10.1828, 'grad_norm': 1.9558933973312378, 'learning_rate': 4.9782135076252726e-05, 'epoch': 0.01}
+{'loss': 10.1209, 'grad_norm': 3.4183945655822754, 'learning_rate': 4.974582425562818e-05, 'epoch': 0.02}
+{'loss': 10.0271, 'grad_norm': 1.3512511253356934, 'learning_rate': 4.9709513435003634e-05, 'epoch': 0.02}
+{'loss': 9.9887, 'grad_norm': 1.2952872514724731, 'learning_rate': 4.967320261437909e-05, 'epoch': 0.02}
+{'loss': 9.8371, 'grad_norm': 1.6135473251342773, 'learning_rate': 4.963689179375454e-05, 'epoch': 0.02}
+{'loss': 9.7994, 'grad_norm': 1.362265706062317, 'learning_rate': 4.9600580973129996e-05, 'epoch': 0.02}
+{'loss': 9.7134, 'grad_norm': 1.9260560274124146, 'learning_rate': 4.956427015250545e-05, 'epoch': 0.03}
+{'loss': 9.6568, 'grad_norm': 1.5945347547531128, 'learning_rate': 4.9527959331880904e-05, 'epoch': 0.03}
+{'loss': 9.5423, 'grad_norm': 1.665661096572876, 'learning_rate': 4.949164851125636e-05, 'epoch': 0.03}
+{'loss': 9.5374, 'grad_norm': 1.2704461812973022, 'learning_rate': 4.945533769063181e-05, 'epoch': 0.03}
+{'loss': 9.4671, 'grad_norm': 1.3820226192474365, 'learning_rate': 4.941902687000726e-05, 'epoch': 0.03}
+{'loss': 9.4097, 'grad_norm': 1.4739972352981567, 'learning_rate': 4.938271604938271e-05, 'epoch': 0.04}
+{'loss': 9.3234, 'grad_norm': 1.2972965240478516, 'learning_rate': 4.9346405228758174e-05, 'epoch': 0.04}
+{'loss': 9.2504, 'grad_norm': 1.2713260650634766, 'learning_rate': 4.931009440813363e-05, 'epoch': 0.04}
+{'loss': 9.2009, 'grad_norm': 1.4773482084274292, 'learning_rate': 4.927378358750908e-05, 'epoch': 0.04}
+{'loss': 9.0411, 'grad_norm': 1.3004589080810547, 'learning_rate': 4.9237472766884536e-05, 'epoch': 0.05}
+{'loss': 8.9624, 'grad_norm': 1.4161856174468994, 'learning_rate': 4.920116194625999e-05, 'epoch': 0.05}
+{'loss': 8.9693, 'grad_norm': 1.3801419734954834, 'learning_rate': 4.9164851125635444e-05, 'epoch': 0.05}
+{'loss': 8.8632, 'grad_norm': 1.697919487953186, 'learning_rate': 4.91285403050109e-05, 'epoch': 0.05}
+{'loss': 8.8419, 'grad_norm': 1.3645638227462769, 'learning_rate': 4.909222948438635e-05, 'epoch': 0.05}
+{'loss': 8.8146, 'grad_norm': 1.2601646184921265, 'learning_rate': 4.90559186637618e-05, 'epoch': 0.06}
+{'loss': 8.7811, 'grad_norm': 1.2409346103668213, 'learning_rate': 4.901960784313725e-05, 'epoch': 0.06}
+{'loss': 8.6964, 'grad_norm': 1.3111680746078491, 'learning_rate': 4.898329702251271e-05, 'epoch': 0.06}
+  File "/home/zhiqi/CS839-Project/small_model.py", line 78, in <module>
+    )
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2486, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/zhiqi/CS839-Project/small_model.py", line 78, in <module>
+    )
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2486, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt

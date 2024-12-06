@@ -1,0 +1,16 @@
+{"time":"2024-12-05T23:50:18.953302581-06:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-05T23:50:18.95330722-06:00","level":"INFO","msg":"created symlink","path":"/home/zhiqi/CS839-Project/wandb/run-20241205_235018-uyroaw6t/logs/debug-core.log"}
+{"time":"2024-12-05T23:50:19.055302305-06:00","level":"INFO","msg":"created new stream","id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:19.055317457-06:00","level":"INFO","msg":"stream: started","id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:19.055387912-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:19.055414097-06:00","level":"INFO","msg":"sender: started","stream_id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:19.055439882-06:00","level":"INFO","msg":"handler: started","stream_id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:19.300642352-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-05T23:50:32.457797945-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-05T23:50:32.457618478-06:00","level":"INFO","msg":"stream: closing","id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:32.458228108-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-05T23:50:32.882390385-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-05T23:50:33.062029372-06:00","level":"INFO","msg":"handler: closed","stream_id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:33.062039105-06:00","level":"INFO","msg":"sender: closed","stream_id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:33.062038806-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uyroaw6t"}
+{"time":"2024-12-05T23:50:33.062067012-06:00","level":"INFO","msg":"stream: closed","id":"uyroaw6t"}

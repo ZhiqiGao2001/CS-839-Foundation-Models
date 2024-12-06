@@ -1,0 +1,42 @@
+  2%|████▏                                                                                                                                                                                                              | 90/4590 [00:24<20:01,  3.75it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+{'loss': 10.7011, 'grad_norm': 3.3091812133789062, 'learning_rate': 4.9891067538126364e-05, 'epoch': 0.0}
+{'loss': 10.5287, 'grad_norm': 1.7611409425735474, 'learning_rate': 4.9782135076252726e-05, 'epoch': 0.0}
+{'loss': 10.4516, 'grad_norm': 1.5234583616256714, 'learning_rate': 4.967320261437909e-05, 'epoch': 0.01}
+{'loss': 10.3703, 'grad_norm': 1.5125938653945923, 'learning_rate': 4.956427015250545e-05, 'epoch': 0.01}
+{'loss': 10.2709, 'grad_norm': 1.4091713428497314, 'learning_rate': 4.945533769063181e-05, 'epoch': 0.01}
+{'loss': 10.1599, 'grad_norm': 2.148986339569092, 'learning_rate': 4.9346405228758174e-05, 'epoch': 0.01}
+{'loss': 10.098, 'grad_norm': 2.969536542892456, 'learning_rate': 4.9237472766884536e-05, 'epoch': 0.02}
+{'loss': 10.0059, 'grad_norm': 1.341585397720337, 'learning_rate': 4.91285403050109e-05, 'epoch': 0.02}
+{'loss': 9.9836, 'grad_norm': 1.2275335788726807, 'learning_rate': 4.901960784313725e-05, 'epoch': 0.02}
+Traceback (most recent call last):
+  File "/home/zhiqi/CS839-Project/small_model.py", line 114, in <module>
+    initialize_training(
+  File "/home/zhiqi/CS839-Project/small_model.py", line 89, in initialize_training
+    trainer.train()
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 58, in training_step
+    loss = self.dream_training_step(model, inputs)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 85, in dream_training_step
+    dream_inputs = self.prepare_dream_inputs(dream_data)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 218, in prepare_dream_inputs
+    'input_ids': torch.stack(input_ids, dim=0),
+RuntimeError: stack expects each tensor to be equal size, but got [8, 6128] at entry 0 and [2048] at entry 5
+Traceback (most recent call last):
+  File "/home/zhiqi/CS839-Project/small_model.py", line 114, in <module>
+    initialize_training(
+  File "/home/zhiqi/CS839-Project/small_model.py", line 89, in initialize_training
+    trainer.train()
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 58, in training_step
+    loss = self.dream_training_step(model, inputs)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 85, in dream_training_step
+    dream_inputs = self.prepare_dream_inputs(dream_data)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 218, in prepare_dream_inputs
+    'input_ids': torch.stack(input_ids, dim=0),
+RuntimeError: stack expects each tensor to be equal size, but got [8, 6128] at entry 0 and [2048] at entry 5

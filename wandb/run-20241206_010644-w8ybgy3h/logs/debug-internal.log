@@ -1,0 +1,16 @@
+{"time":"2024-12-06T01:06:44.784186397-06:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-06T01:06:44.784195109-06:00","level":"INFO","msg":"created symlink","path":"/home/zhiqi/CS839-Project/wandb/run-20241206_010644-w8ybgy3h/logs/debug-core.log"}
+{"time":"2024-12-06T01:06:44.886289578-06:00","level":"INFO","msg":"created new stream","id":"w8ybgy3h"}
+{"time":"2024-12-06T01:06:44.88630483-06:00","level":"INFO","msg":"stream: started","id":"w8ybgy3h"}
+{"time":"2024-12-06T01:06:44.886365596-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"w8ybgy3h"}
+{"time":"2024-12-06T01:06:44.886414726-06:00","level":"INFO","msg":"handler: started","stream_id":"w8ybgy3h"}
+{"time":"2024-12-06T01:06:44.886426444-06:00","level":"INFO","msg":"sender: started","stream_id":"w8ybgy3h"}
+{"time":"2024-12-06T01:06:45.11284574-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-06T01:07:09.801338326-06:00","level":"INFO","msg":"stream: closing","id":"w8ybgy3h"}
+{"time":"2024-12-06T01:07:09.801353616-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-06T01:07:09.801751372-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-06T01:07:10.220912085-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-06T01:07:10.674983336-06:00","level":"INFO","msg":"handler: closed","stream_id":"w8ybgy3h"}
+{"time":"2024-12-06T01:07:10.675005696-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"w8ybgy3h"}
+{"time":"2024-12-06T01:07:10.675025624-06:00","level":"INFO","msg":"sender: closed","stream_id":"w8ybgy3h"}
+{"time":"2024-12-06T01:07:10.675037454-06:00","level":"INFO","msg":"stream: closed","id":"w8ybgy3h"}

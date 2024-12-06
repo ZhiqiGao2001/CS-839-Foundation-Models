@@ -1,0 +1,45 @@
+  2%|████▏                                                                                                                                                                                                              | 90/4590 [00:24<20:04,  3.73it/s]Traceback (most recent call last):
+{'loss': 10.7291, 'grad_norm': 3.367037057876587, 'learning_rate': 4.9891067538126364e-05, 'epoch': 0.0}
+{'loss': 10.5719, 'grad_norm': 1.700908899307251, 'learning_rate': 4.9782135076252726e-05, 'epoch': 0.0}
+{'loss': 10.4807, 'grad_norm': 1.4688268899917603, 'learning_rate': 4.967320261437909e-05, 'epoch': 0.01}
+{'loss': 10.406, 'grad_norm': 1.5335904359817505, 'learning_rate': 4.956427015250545e-05, 'epoch': 0.01}
+{'loss': 10.306, 'grad_norm': 1.3736200332641602, 'learning_rate': 4.945533769063181e-05, 'epoch': 0.01}
+{'loss': 10.2061, 'grad_norm': 1.9997565746307373, 'learning_rate': 4.9346405228758174e-05, 'epoch': 0.01}
+{'loss': 10.1323, 'grad_norm': 2.940610647201538, 'learning_rate': 4.9237472766884536e-05, 'epoch': 0.02}
+{'loss': 10.0432, 'grad_norm': 1.309652328491211, 'learning_rate': 4.91285403050109e-05, 'epoch': 0.02}
+{'loss': 10.0152, 'grad_norm': 1.2982462644577026, 'learning_rate': 4.901960784313725e-05, 'epoch': 0.02}
+  File "/home/zhiqi/CS839-Project/small_model.py", line 114, in <module>
+    initialize_training(
+  File "/home/zhiqi/CS839-Project/small_model.py", line 89, in initialize_training
+    trainer.train()
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 56, in training_step
+    loss = self.dream_training_step(model, inputs)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 78, in dream_training_step
+    dream_data = self.create_dream_data(model)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 116, in create_dream_data
+    generated_data = self.generate_data(model, num_samples=5)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 128, in generate_data
+    input_ids = torch.tensor([[self.processing_class.tokenizer.bos_token_id]]).to(self.device)
+AttributeError: 'GPT2TokenizerFast' object has no attribute 'tokenizer'. Did you mean: '_tokenizer'?
+Traceback (most recent call last):
+  File "/home/zhiqi/CS839-Project/small_model.py", line 114, in <module>
+    initialize_training(
+  File "/home/zhiqi/CS839-Project/small_model.py", line 89, in initialize_training
+    trainer.train()
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2123, in train
+    return inner_training_loop(
+  File "/home/zhiqi/anaconda3/envs/llmmath/lib/python3.10/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 56, in training_step
+    loss = self.dream_training_step(model, inputs)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 78, in dream_training_step
+    dream_data = self.create_dream_data(model)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 116, in create_dream_data
+    generated_data = self.generate_data(model, num_samples=5)
+  File "/home/zhiqi/CS839-Project/dream_trainer.py", line 128, in generate_data
+    input_ids = torch.tensor([[self.processing_class.tokenizer.bos_token_id]]).to(self.device)
+AttributeError: 'GPT2TokenizerFast' object has no attribute 'tokenizer'. Did you mean: '_tokenizer'?
