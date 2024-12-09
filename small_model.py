@@ -60,12 +60,14 @@ def initialize_training(model_to_train, tokenizer_, data_collator_, train_datase
         logging_steps=10,
         **hyperparameters
     )
+    batch_size = training_args.per_device_train_batch_size
     early_stopping_callback = EarlyStoppingCallback(
         early_stopping_patience=2,
         early_stopping_threshold=0.1,
     )
     if dream:
         print("Using DreamTrainer")
+
         trainer = DreamTrainer(
             model=model_to_train,
             args=training_args,
@@ -74,6 +76,14 @@ def initialize_training(model_to_train, tokenizer_, data_collator_, train_datase
             callbacks=[early_stopping_callback],
             data_collator=data_collator_,
             processing_class=tokenizer_,
+            batch_size=batch_size,
+            max_new_tokens=1024,
+            max_length=2048,
+            dream_block_size=100,
+            normal_steps_in_block=90,
+            dream_steps_in_block=10,
+            num_reorganized_samples=5,
+            num_generated_samples=5,
         )
     else:
         trainer = Trainer(
@@ -105,7 +115,7 @@ if __name__ == '__main__':
 
     train_dataset, eval_dataset, test_dataset = get_wiki_dataset(
         tokenizer,
-        # small=True
+        small=True
     )
 
     hps = {
@@ -121,7 +131,7 @@ if __name__ == '__main__':
         train_dataset,
         eval_dataset,
         hps,
-        # dream=True,
+        dream=True,
     )
 
 
