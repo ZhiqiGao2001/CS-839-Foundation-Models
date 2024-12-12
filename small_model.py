@@ -44,6 +44,11 @@ def get_wiki_dataset(tokenizer_, small=False):
     eval_tokenized = ds_eval.map(tokenize_function, batched=True, num_proc=4)
     test_tokenized = ds_test.map(tokenize_function, batched=True, num_proc=4)
 
+    # # only select 5% of the data for training
+    # train_tokenized = train_tokenized.shard(num_shards=20, index=0)
+    # eval_tokenized = eval_tokenized.shard(num_shards=20, index=0)
+    # test_tokenized = test_tokenized.shard(num_shards=20, index=0)
+
     return train_tokenized, eval_tokenized, test_tokenized
 
 
@@ -58,6 +63,7 @@ def initialize_training(model_to_train, tokenizer_, data_collator_, train_datase
         report_to="wandb",
         load_best_model_at_end=True,
         logging_steps=10,
+        run_name=f"gpt-neo-wikitext-2 Dream={dream}",
         **hyperparameters
     )
     batch_size = training_args.per_device_train_batch_size
@@ -76,6 +82,7 @@ def initialize_training(model_to_train, tokenizer_, data_collator_, train_datase
             callbacks=[early_stopping_callback],
             data_collator=data_collator_,
             processing_class=tokenizer_,
+            generation_prompt="Generate something random:",
             batch_size=batch_size,
             max_new_tokens=1024,
             max_length=2048,
@@ -119,9 +126,10 @@ if __name__ == '__main__':
     )
 
     hps = {
-        "num_train_epochs": 1,
-        "per_device_train_batch_size": 8,
-        "per_device_eval_batch_size": 8,
+        "num_train_epochs": 15,
+        "per_device_train_batch_size": 16,
+        "gradient_accumulation_steps": 2,
+        "per_device_eval_batch_size": 16,
     }
 
     initialize_training(
